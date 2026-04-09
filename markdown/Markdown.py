@@ -36,7 +36,12 @@ class Markdown:
                 return "\n".join([f"- {item.strip()}" for item in items]) + "\n"
 
             if balise == "code":
-                return f"```\n{contenu}\n```\n"
+                if ":" in contenu:
+                    language = contenu.split(":")[0]
+                    contenu = contenu.split(":")[1:][0]
+                else:
+                    language = ""
+                return f"```{language}\n{contenu}\n```\n"
 
             if balise == "link":
                 # format attendu: texte | url
