@@ -1,0 +1,18 @@
+title{Mon document}
+
+h2{Introduction}
+bold{Bonjour} ceci est un italic{test}
+
+list{item1 | item2 | item3}
+
+link{Google | https://google.com}
+
+img{logo | https://site.com/logo.png}
+
+code{print("hello")}
+
+table{
+        thead: col1 | col2;
+        row: val1 | val2;
+        row: val1 | val2
+    }

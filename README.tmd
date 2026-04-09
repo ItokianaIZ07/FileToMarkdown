@@ -1,0 +1,84 @@
+title{FileToMarkdown}
+
+h3{Description}
+p{FileToMarkdown est un outil qui permet de convertir des fichiers personnalisés au format .tmd en fichiers Markdown standards (.md).}
+p{Ce projet vise à simplifier la rédaction de contenu structuré en utilisant une syntaxe légère et extensible.}
+
+h3{Fonctionnalités}
+list{Conversion de fichiers .tmd vers .md | Support des titres (h1 à h6) | Texte en gras et en italique | Listes simples | Liens et images | Blocs de code | Tableaux personnalisés}
+
+h3{Format du fichier .tmd}
+p{Le fichier .tmd utilise une syntaxe basée sur des balises de la forme balise{contenu}.}
+p{Chaque balise correspond à un élément Markdown.}
+
+h4{Exemples}
+codeblock{
+title{Mon document}
+h2{Introduction}
+bold{Texte important}
+italic{Texte en italique}
+list{élément 1 | élément 2 | élément 3}
+link{Google | https://google.com}
+img{logo | https://example.com/logo.png}
+}
+
+h3{Syntaxes disponibles}
+
+h4{Titres}
+list{title{...} : Titre principal (h1) | h1{...} : Titre niveau 1 | h2{...} : Titre niveau 2 | h3{...} : Titre niveau 3 | h4{...} : Titre niveau 4 | h5{...} : Titre niveau 5 | h6{...} : Titre niveau 6}
+
+h4{Texte}
+list{bold{...} ou b{...} : Texte en gras | italic{...} ou i{...} : Texte en italique | strike{...} : Texte barré}
+
+h4{Listes}
+list{list{item1 | item2 | item3} : Liste à puces | li{item1 | item2} : Variante de liste}
+
+h4{Liens et images}
+list{link{texte | url} : Lien cliquable | img{alt | url} : Image}
+
+h4{Code}
+list{code{...} : Code inline | codeblock{...} : Bloc de code multi-lignes}
+
+h4{Autres}
+list{quote{...} : Citation | hr{} : Ligne horizontale}
+
+h4{Tableaux}
+p{Les tableaux sont définis avec la balise table en utilisant thead et row.}
+codeblock{
+table{
+thead: Nom | Age | Pays;
+row: John | 25 | USA;
+row: Anna | 30 | France
+}
+}
+
+h3{Installation}
+p{Clonez le projet depuis le dépôt GitHub.}
+codeblock{
+git clone https://github.com/ItokianaIZ07/FileToMarkdown.git
+}
+
+h3{Utilisation}
+p{Exécutez le programme en passant un fichier .tmd en argument.}
+codeblock{
+python main.py fichier.tmd
+}
+
+h3{Exemple de conversion}
+p{Entrée (.tmd)}
+codeblock{
+title{Exemple}
+bold{Bonjour} italic{monde}
+}
+
+p{Sortie (.md)}
+code{
+# Exemple
+**Bonjour** *monde*
+}
+
+h3{Objectif du projet}
+p{Ce projet est conçu comme un exercice pour apprendre la manipulation de fichiers, les expressions régulières et la conception de petits langages.}
+
+h3{Licence}
+p{Projet libre d'utilisation à des fins éducatives.}
