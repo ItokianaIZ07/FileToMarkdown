@@ -77,7 +77,7 @@ class Markdown:
     def __exits(file) -> bool:
         return os.path.exists(file)
 
-    def __getMarkdownFormat(balise):
+    def __getMarkdownFormat(balise) -> str:
         formats = {
             "title": "#",
             "h1": "#",
