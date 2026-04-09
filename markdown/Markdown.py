@@ -93,7 +93,10 @@ class Markdown:
 
             "quote": "> ",
 
-            "hr": "---"
+            "hr": "---",
+
+            "list": "-",
+            "li": "-"
         }
         return formats.get(balise)
 
