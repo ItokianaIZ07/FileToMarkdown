@@ -4,11 +4,17 @@ import sys
 def main():
     args = sys.argv
 
+    if len(args) <= 1:
+        print("Enter a fileName")
+        print("The right syntax is (command <file>)")
+        exit(1)
+
     if len(args) != 2:
         print("Only 1 file accepted")
         exit(1)
     
     file = args[1]
+
 
     if Markdown.isExtensionValid(file):
         Markdown.toMarkdown(file)
