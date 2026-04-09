@@ -70,16 +70,13 @@ class Markdown:
         return file.endswith(".tmd")
     
 
-    @classmethod
     def __getFileContent(file):
         with open(file, "r") as f:
             return f.read()
 
-    @classmethod
     def __exits(file) -> bool:
         return os.path.exists(file)
 
-    @classmethod
     def __getMarkdownFormat(balise):
         formats = {
             "title": "#",
@@ -109,7 +106,6 @@ class Markdown:
         }
         return formats.get(balise)
 
-    @classmethod
     def __parseTable(contenu):
         """
         Format attendu:
