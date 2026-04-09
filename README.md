@@ -8,7 +8,14 @@ Ce projet vise à simplifier la rédaction de contenu structuré en utilisant un
 
 ### Fonctionnalités
 
-Conversion de fichiers .tmd vers .md | Support des titres (h1 à h6) | Texte en gras et en italique | Listes simples | Liens et images | Blocs de code | Tableaux personnalisés
+- Conversion de fichiers .tmd vers .md
+- Support des titres (h1 à h6)
+- Texte en gras et en italique
+- Listes simples
+- Liens et images
+- Blocs de code
+- Tableaux personnalisés
+
 
 ### Format du fichier .tmd
 
@@ -23,7 +30,10 @@ title{Mon document
 
 **Texte important**
 *Texte en italique*
-élément 1 | élément 2 | élément 3
+- élément 1
+- élément 2
+- élément 3
+
 Google | https://google.com
 logo | https://example.com/logo.png
 }
@@ -33,7 +43,8 @@ logo | https://example.com/logo.png
 
 #### Titres
 
-title{... : Titre principal (h1) | # ...
+- title{...
+ : Titre principal (h1) | # ...
  : Titre niveau 1 | ## ...
  : Titre niveau 2 | ### ...
  : Titre niveau 3 | #### ...
@@ -43,23 +54,33 @@ title{... : Titre principal (h1) | # ...
 
 #### Texte
 
-bold{... ou **...** : Texte en gras | *...* ou *...* : Texte en italique | ~~...~~ : Texte barré}
+- bold{...
+ ou **...** : Texte en gras | *...* ou *...* : Texte en italique | ~~...~~ : Texte barré}
 
 #### Listes
 
-list{item1 | item2 | item3 : Liste à puces | item1 | item2 : Variante de liste}
+- list{item1
+- item2
+- item3
+ : Liste à puces | - item1
+- item2
+ : Variante de liste}
 
 #### Liens et images
 
-link{texte | url : Lien cliquable | alt | url : Image}
+- link{texte
+- url
+ : Lien cliquable | alt | url : Image}
 
 #### Code
 
-code{... : Code inline | ... : Bloc de code multi-lignes}
+- code{...
+ : Code inline | ... : Bloc de code multi-lignes}
 
 #### Autres
 
-quote{... : Citation | ------ : Ligne horizontale}
+- quote{...
+ : Citation | ------ : Ligne horizontale}
 
 #### Tableaux
 
