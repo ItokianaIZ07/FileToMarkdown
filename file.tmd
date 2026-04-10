@@ -7,12 +7,33 @@ list{item1 | item2 | item3}
 
 link{Google | https://google.com}
 
-img{logo | https://site.com/logo.png}
+img{logo | file:///C:/xampp/tomcat/webapps/docs/images/asf-logo.svg}
 
 code{print("hello")}
+
+hr{}
+
+strike{ty no atao hoe strike}
+
+hr{}
+
+code{php:<?php echo "Bonjour Itokiana";?>}
 
 table{
         thead: col1 | col2;
         row: val1 | val2;
         row: val1 | val2
     }
+
+h2{Notions importantes de la POO}
+
+table{
+    thead: Concept | Signification;
+    row: Classe | modèle pour créer des objets;
+    row: Objet | instance d'une classe;
+    row: Attribut | variable appartenant à un objet;
+    row: Méthode | fonction appartenant à un objet;
+    row: Encapsulation | protection des données;
+    row: Héritage | une classe peut dériver d'une autre;
+    row: Polymorphisme | même méthode, comportements différents
+}
